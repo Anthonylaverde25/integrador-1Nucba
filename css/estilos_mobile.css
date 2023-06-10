@@ -382,7 +382,8 @@ a {
 }
 
 /* Las clases de este apartado solo aplicaran para la version mobile */
-@media screen and (min-width: 390px) and (max-width: 766px) {
+@media screen and (min-width: 390px) and (max-width: 844px) {
+  /**760*/
   .cartSection {
     display: block;
   }
