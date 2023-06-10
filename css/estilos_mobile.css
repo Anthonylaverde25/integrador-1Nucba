@@ -1,21 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+
+/* Se importan las fuentes de Google Fonts */
+
+/* font-family: "Cormorant Garamond", serif; */
+/* Comentario: El estilo de la fuente Cormorant Garamond se ha comentado */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  line-height: 1.5;
 }
 
-/* GLOBALES */
+body {
+  background-color: whitesmoke;
+}
 
+/* Estilos globales */
+a {
+  text-decoration: none;
+  color: inherit; /* Heredar el color del texto padre */
+}
 :root {
   --fuente-primaria: #fff;
   --boton-register: #008cba;
+  --background-first: #0000;
 }
+
+/* Variables CSS para colores utilizados */
 
 /* -------------------------- HEADER -------------------------------------------------------------------- */
 
-/* En esta seccion trabajare realizando el menu toggle para la version mobile */
+/* Estilos para el encabezado y el menú toggle en la versión móvil */
 
 /* Ocultar el Checkbox */
 #toggle {
@@ -43,43 +63,62 @@
 .nav {
   position: absolute;
   width: 100%;
-  /*height: calc(100vh - 50px);*/
   top: 50px;
   left: 0;
-  background: #fff;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Fondo semi-transparente para el efecto blur */
+
   padding: 10px;
   z-index: 1;
+  backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+}
+
+.nav_list::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background-color: gray;
+  margin-top: 10px;
 }
 
 /* Estilos para la lista de elementos del menú */
-
 .nav_list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 /* Espacio entre los elementos de la lista */
-
 .nav_list li {
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
+/* Estilos del encabezado */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: black;
+  border-bottom: 1px gray solid;
 }
 
+/* Estilos para el ícono de toggle del menú */
 .header .label_toggle .toggle_icono {
   font-size: 30px;
   color: #fff;
   background-color: black;
 }
 
+/* Estilos para el logotipo */
 .header .logo {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -88,9 +127,315 @@
   color: var(--fuente-primaria);
 }
 
-.header .register {
+/* Estilos para el contenedor de registro e inicio de sesión */
+.header .registerAndLogin {
+  display: block;
+}
+
+/* Estilos para el botón de registro de usuario */
+.header .registerAndLogin .register_user {
   border-radius: 5px;
   color: var(--fuente-primaria);
   padding: 2px 10px;
   background: var(--boton-register);
+}
+
+/* -------------------------- MAIN -------------------------------------------------------------------- */
+
+/* -------------------------- firstSection -------------------------------------------------------------------- */
+
+.firstSection {
+  width: 100%;
+  background-color: black;
+  color: var(--fuente-primaria);
+}
+
+.newReview {
+  padding-top: 30px;
+}
+
+.newReview_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  font-family: newyork;
+}
+
+.newReview_info * {
+  margin-bottom: 10px;
+}
+
+.newReview_info.dateReview .BookAuthor {
+  font-size: 12px;
+}
+.newReview_info .titleBook {
+  font-size: 34px;
+  text-align: center;
+}
+
+.imagenLibro {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* -------------------------- secondSection -------------------------------------------------------------------- */
+
+.secondSection {
+  position: relative;
+}
+
+.secondSection .sharePost {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  padding: 1rem;
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sharePost .sharePost_paragraph {
+  margin-right: 20px;
+}
+
+.secondSection .sharePost i {
+  background-color: rgb(181, 171, 191);
+  padding: 5px;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+/* -------------------------- thirdSection -------------------------------------------------------------------- */
+
+.thirdSection {
+  height: auto;
+}
+
+.thirdSection .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: rgb(230, 236, 236);*/
+  margin: 50px auto 0 auto;
+  height: auto;
+  width: 90%;
+  padding: 10px;
+  /*border: 1px solid black;*/
+  font-family: "EB Garamond", serif;
+}
+
+.thirdSection .review .tittleReview {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.thirdSection .review .overviewCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0px;
+}
+
+.thirdSection .review .overviewCart .overview {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.thirdSection .review .overviewCart .cart {
+  color: var(--fuente-primaria);
+  font-weight: bold;
+  background-color: #1a1a1a;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.thirdSection .review .overviewCart .overview .plus {
+  margin-left: 20px;
+}
+
+/*
+.thirdSection .review .overview {
+  margin-top: 12px;
+  border: 2px solid rgb(146, 134, 134);
+  border-radius: 8px;
+  padding: 10px;
+}*/
+
+.overviewCart .review .overviewCart {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.reviewBook .mayuscula {
+  font-size: 30px;
+}
+
+.reviewBook .readMore {
+  font-weight: bold;
+}
+
+.buyNow {
+  display: none;
+}
+
+.aboutThisBook {
+  display: none;
+}
+
+.reviewBook_buy {
+  display: none;
+}
+
+/* -------------------------- thirdSection -------------------------------------------------------------------- */
+.fourSection {
+  background-color: red;
+}
+
+.cartBook {
+  display: none;
+}
+
+/* -------------------------- Our Sections -------------------------------------------------------------------- */
+.OurSection {
+  position: relative;
+  height: 80vh;
+  background-image: url(/imagenes/newyork.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 50px;
+  background-color: whitesmoke;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(186, 183, 183, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourHistoryBox {
+  width: 90%;
+  height: auto;
+  background-color: rgba(226, 217, 217, 0.189);
+  padding: 20px;
+  text-align: center;
+  color: rgb(39, 39, 39);
+  /*color: rgb(48, 47, 47);*/
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+.ourHistoryBox .ourHistoryBox_btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+/* -------------------------- Cart Sections --------------------------------------------------------------*/
+
+.cartSection {
+  background-color: whitesmoke;
+  font-family: "Cormorant Garamond", serif;
+  & h2 {
+    text-align: center;
+    padding: 1rem;
+    color: #b7343a;
+    margin-top: 30px;
+  }
+}
+.cartSection {
+  display: none;
+}
+.cartSectionDesktop {
+  margin-top: 100px;
+}
+
+.cartContain {
+  transition: transform 0.3s ease;
+}
+
+.cartContain:hover {
+  transform: translateY(-5px);
+}
+
+/* Las clases de este apartado solo aplicaran para la version mobile */
+@media screen and (min-width: 390px) and (max-width: 766px) {
+  .cartSection {
+    display: block;
+  }
+  .cartSectionDesktop {
+    display: none;
+  }
+  .cartSection .cartContain .cartContain_img {
+    display: block;
+    width: 85%;
+    margin: 10px auto;
+  }
+  .cartSection .cartContain .cartContain_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    background-color: rgb(248, 232, 204);
+    padding: 10px;
+  }
+
+  .cartSection .cartContain .cartContain_info .reviewBook_cart {
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .cartSection .cartContain .cartContain_info .cartContain_btn {
+    display: block;
+    width: 95%;
+    background-color: bisque;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #c4888b;
+  }
+
+  .cartBook {
+    display: block;
+    background-color: wheat;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    color: #b7343a;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .cartBooks {
+    display: none;
+  }
+
+  .cartBook .cartBook_bookCover .content img {
+    width: 90%;
+  }
 }

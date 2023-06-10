@@ -17,7 +17,10 @@
     <title>Proyecto_integrador</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header containerHeader">
+      <!-- Aquí se agrega el overlay -->
+      <div class="nav_overlay"></div>
+
       <input type="checkbox" id="toggle" />
       <label class="label_toggle" for="toggle"
         ><i class="fa-solid fa-bars toggle_icono"></i
@@ -25,10 +28,10 @@
 
       <nav class="nav">
         <ul class="nav_list">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contacs</li>
-          <li>info</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacs</a></li>
+          <li><a href="#">Info</a></li>
         </ul>
       </nav>
 
@@ -37,11 +40,249 @@
         <h2>New Bookshelf</h2>
       </div>
 
-      <div class="register">
+      <div class="registerAndLogin">
+        <div class="login">
+          <p>Sing in</p>
+        </div>
         <div class="register_user">
           <p>Subscribe</p>
         </div>
       </div>
     </header>
+
+    <main class="main">
+      <!--Primera Section. Libro de la semana-->
+      <section class="firstSection">
+        <div class="newReview">
+          <div class="newReview_info">
+            <h3 class="dateReview">Mistery June 6, 2023</h3>
+            <span class="titleBook"> The cradle of the drowned </span>
+            <span class="BookAuthor">By: A.J Laverde</span>
+            <!--<div class="buyNow">
+              <h2>Price : 26$</h2>
+              <div class="buyNow_format">
+                <span>Format</span>
+                <h2>Digital Book</h2>
+                <div class="buyNow_btn">
+                  <p>Buy Now</p>
+                </div>
+              </div>
+            </div>-->
+            <div class="aboutThisBook">
+              <div class="iconoCompartir">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-link"></i>             
+              </div>
+              <div class="aboutThisBook_info">
+                <h3>About this book</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia numquam suscipit consectetur culpa est nihil aliquam
+                  temporibus quos ea, cumque obcaecati accusantium sed iure
+                  deserunt eos, perferendis ut provident dolorum?
+                  <div class="readMore">
+                    <p> <a href="#">Read More</a></p>
+                    <i class="fa-regular fa-plus"></i>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="newReview_image">
+            <img
+              class="imagenLibro"
+              src="imagenes/DesconsueloPortada.png"
+              alt="imagen libro"
+            />
+          </div>
+        </div>
+      </section>
+      <!--Segunda Secction.Compartir publicacion-->
+      <section class="secondSection">
+        <div class="sharePost">
+          <h3 class="sharePost_paragraph">Share this Article:</h3>
+          <div class="sharePost_socialnetworks">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-link"></i>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="thirdSection">
+        <div class="review">
+          <div>
+            <h3 class="tittleReview">
+              Modern horror. Ideal to start reading the youth horror genre
+            </h3>
+          </div>
+          <div class="overviewCart">
+            <span class="overview btn">Overview</span>
+            <span class="overview cart btn"
+              >Add to Cart <i class="fa-solid fa-plus plus"></i>
+            </span>
+          </div>
+
+          <div class="reviewBook">
+            <p>
+              <span class="mayuscula">T</span> he peaceful life of the
+              inhabitants of Isla de las Sombras is shaken when a group of young
+              people decide to delve into the dark mysteries that surround the
+              legendary abandoned lighthouse known as "La Cuna de los Ahogados".
+              Marina, a brave teenager with an enigmatic past, leads her friends
+              on this intrepid quest. Together, they venture into the
+              labyrinthine underground tunnels that connect the lighthouse to
+              the village, plunging into a world of terrifying shadows and
+              sinister whispers that seem to rise from the very depths of the
+              abyss. As they unravel the secrets hidden in the island's past,
+              they come across a series of unexplained disappearances that have
+              haunted Isle of Shadows for generations. Each discovery brings
+              them closer to a disturbing truth, as danger closes in on them and
+              time runs against them.
+              <span class="readMore"
+                ><a href="#"
+                  >Book Details ... <i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </span>
+            </p>
+
+            <div class="reviewBook_buy">
+              <div class="imgMiniatura">
+                <div>
+                  <img src="imagenes/DesconsueloPortada.png" alt="">
+                </div>
+                <h4>book of the week:The cradle of the drowned</h4>
+              </div>
+              <div class="reviewBook_buy--cart">
+                <h4>Price: $ 19.00</h4>
+                <div class="reviewBook_buy--cart_format">
+                  <span>Format</span>
+                  <h5>Ebook</h5>
+                </div>
+                <div class="reviewBook_buy--cart_buyNow">
+                  <button class="btn_buy">
+                    <a href="#">Add to cart</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="OurSection">
+        <div class="overlay">
+          <div class="ourHistoryBox">
+            <h2>Our History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti reiciendis quas. Voluptatem magnam reprehenderit laborum omnis velit cum maiores dolores recusandae doloremque! Ad atque quibusdam dolorum minus, eaque voluptate?</p>
+            <a class="ourHistoryBox_btn" href="#">read more</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!--En esta sections genero una cart para la version mobile-->
+      <section class="cartSection">
+        <h2>New in this Bookstore</h2>
+        <div class="cartContain">
+          <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="">
+          <div class="cartContain_info">
+            <h3>Cuentos de Lovecraft</h3>
+            <p>by : Lovecraft</p>
+            <p>Price : 19$</p>
+            <div class="reviewBook_cart">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur possimus officiis sit, vel voluptate porro officia? Adipisci libero
+                quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus doloribus at! ...read more
+              </p>
+            </div>
+            <a href="#" class="cartContain_btn">Buy</a>
+          </div>
+        </div>
+
+      </section>
+      <!--En esta sections genero una cart para la version mobile-->
+
+
+      <!--En esta sections genero una cart para la version desktop-->
+      <section class="cartSectionDesktop">
+        <!-- CARDS -->
+        <div class="cartContain">
+          <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="">
+          <div class="cartContain_info">
+            <h3>Cuentos de Lovecraft</h3>
+            <p>by : Lovecraft</p>
+            <p>Price : 19$</p>
+            <div class="reviewBook_cart">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing, vel voluptate porro officia? Adipisci libero
+                quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus doloribus at! ...read more
+              </p>
+            </div>
+            <a href="#" class="cartContain_btn">Buy</a>
+          </div>
+        </div>
+        <!-- CARDS -->
+       
+        <!-- CARDS -->
+        <div class="cartContain">
+          <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="">
+          <div class="cartContain_info">
+            <h3>Cuentos de Lovecraft</h3>
+            <p>by : Lovecraft</p>
+            <p>Price : 19$</p>
+            <div class="reviewBook_cart">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur possimus officiis sit, vel voluptate porro officia? Adipisci libero
+                quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus doloribus at! ...read more
+              </p>
+            </div>
+            <a href="#" class="cartContain_btn">Buy</a>
+          </div>
+        </div>
+        <!-- CARDS -->
+        <div class="cartContain">
+          <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="">
+          <div class="cartContain_info">
+            <h3>Cuentos de Lovecraft</h3>
+            <p>by : Lovecraft</p>
+            <p>Price : 19$</p>
+            <div class="reviewBook_cart">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur possimus officiis sit, vel voluptate porro officia? Adipisci libero
+                quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus doloribus at! ...read more
+              </p>
+            </div>
+            <a href="#" class="cartContain_btn">Buy</a>
+          </div>
+        </div>
+        <!-- CARDS -->
+        <div class="cartContain">
+          <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="">
+          <div class="cartContain_info">
+            <h3>Cuentos de Lovecraft</h3>
+            <p>by : Lovecraft</p>
+            <p>Price : 19$</p>
+            <div class="reviewBook_cart">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur possimus officiis sit, vel voluptate porro officia? Adipisci libero
+                quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus doloribus at! ...read more
+              </p>
+            </div>
+            <a href="#" class="cartContain_btn">Buy</a>
+          </div>
+        </div>
+        <!-- CARDS -->
+        
+      </section>
+      <!--En esta sections genero una cart para la version desktop-->
+
+
+
+      
+
+   
+    </main>
   </body>
 </html>
