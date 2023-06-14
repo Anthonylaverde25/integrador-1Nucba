@@ -1,89 +1,78 @@
-   <!--<section class="fourSection">        
-        <div class="cartBook">
-          <h2>New in this Bookstore</h2>
-          <div class="cartBook_bookCover">
-            <div class="content">
-              <h2>Titulo del libro</h2>
-              <img class="img_cartBooks" src="imagenes/portada_lovecraft.jpg" alt="">
-              <p>Autor: nombre del libro</p>
-              <p>Precio : 19$</p>
-              <button>comprar</button>
-              <button>ver reseña</button>
+<!--En esta sections genero una cart para la version desktop-->
+<section class="cartSectionDesktop">
+  <!-- CARDS -->
+  <div class="cartContain">
+    <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="" />
+    <div class="cartContain_info">
+      <h3>Cuentos de Lovecraft</h3>
+      <p>by : Lovecraft</p>
+      <p>Price : 19$</p>
+      <div class="reviewBook_cart">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing, vel voluptate
+          porro officia? Adipisci libero quos nisi incidunt voluptate ad?
+          Voluptas commodi distinctio possimus doloribus at! ...read more
+        </p>
+      </div>
+      <a href="#" class="cartContain_btn">Buy</a>
+    </div>
+  </div>
+  <!-- CARDS -->
 
-            </div>
-          </div>
-        </div> /* una sola cart para mobile
-
-        <div class="cartBooks">
-          <div class="">
-            <h2>New in this Bookstore</h2>
-            <div class="cartBook_bookCover">
-              <div class="content">
-                <h2>Titulo del libro</h2>
-                <img class="img_cartBooks" src="imagenes/portada_lovecraft.jpg" alt="">
-                <p>Autor: nombre del libro</p>
-                <p>Precio : 19$</p>
-                <button>comprar</button>
-                <button>ver reseña</button>
-  
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <h2>New in this Bookstore</h2>
-            <div class="cartBook_bookCover">
-              <div class="content">
-                <h2>Titulo del libro</h2>
-                <img class="img_cartBooks" src="imagenes/portada_lovecraft.jpg" alt="">
-                <p>Autor: nombre del libro</p>
-                <p>Precio : 19$</p>
-                <button>comprar</button>
-                <button>ver reseña</button>
-  
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <h2>New in this Bookstore</h2>
-            <div class="cartBook_bookCover">
-              <div class="content">
-                <h2>Titulo del libro</h2>
-                <img class="img_cartBooks" src="imagenes/portada_lovecraft.jpg" alt="">
-                <p>Autor: nombre del libro</p>
-                <p>Precio : 19$</p>
-                <button>comprar</button>
-                <button>ver reseña</button>
-  
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-
-
-        <!-- Carts para version mobile y desktop-->
-
-
-
-
-
-        <!--<div class="titleFourSections">
-         <h2>New in this Bookstore</h2>
-         <!-- Muestra un solo libro para mobile
-         <div class="book-cover">
-           <div class="animation"></div>
-           <div class="content">
-            <h2>titulo del libro</h2>
-            <p>Autor: nombre del autor</p>
-            <p>Precio : 19.00$</p>
-            <button>comprar</button>
-            <button>ver reseña </button>
-           </div>
-         </div>
-        </div>
-
-         
-       </div>-->
-        
-      </section>
+  <!-- CARDS -->
+  <div class="cartContain">
+    <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="" />
+    <div class="cartContain_info">
+      <h3>Cuentos de Lovecraft</h3>
+      <p>by : Lovecraft</p>
+      <p>Price : 19$</p>
+      <div class="reviewBook_cart">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur
+          possimus officiis sit, vel voluptate porro officia? Adipisci libero
+          quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus
+          doloribus at! ...read more
+        </p>
+      </div>
+      <a href="#" class="cartContain_btn">Buy</a>
+    </div>
+  </div>
+  <!-- CARDS -->
+  <div class="cartContain">
+    <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="" />
+    <div class="cartContain_info">
+      <h3>Cuentos de Lovecraft</h3>
+      <p>by : Lovecraft</p>
+      <p>Price : 19$</p>
+      <div class="reviewBook_cart">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur
+          possimus officiis sit, vel voluptate porro officia? Adipisci libero
+          quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus
+          doloribus at! ...read more
+        </p>
+      </div>
+      <a href="#" class="cartContain_btn">Buy</a>
+    </div>
+  </div>
+  <!-- CARDS -->
+  <div class="cartContain">
+    <img class="cartContain_img" src="/imagenes/portada_lovecraft.jpg" alt="" />
+    <div class="cartContain_info">
+      <h3>Cuentos de Lovecraft</h3>
+      <p>by : Lovecraft</p>
+      <p>Price : 19$</p>
+      <div class="reviewBook_cart">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur
+          possimus officiis sit, vel voluptate porro officia? Adipisci libero
+          quos nisi incidunt voluptate ad? Voluptas commodi distinctio possimus
+          doloribus at! ...read more
+        </p>
+      </div>
+      <a href="#" class="cartContain_btn">Buy</a>
+    </div>
+  </div>
+  <!-- CARDS -->
+</section>
+<!--En esta sections genero una cart para la version desktop-->
