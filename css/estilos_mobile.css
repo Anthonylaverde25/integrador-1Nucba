@@ -674,8 +674,237 @@ a {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  /* book sections */
+
+  .book-section {
+    display: none;
+  }
+  .cartSection {
+    display: block;
+  }
+  .cartSectionDesktop {
+    display: none;
+  }
+  .cartSection .cartContain .cartContain_img {
+    display: block;
+    width: 85%;
+    margin: 10px auto;
+  }
+  .cartSection .cartContain .cartContain_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    background-color: rgb(248, 232, 204);
+    padding: 10px;
+  }
+
+  .cartSection .cartContain .cartContain_info .reviewBook_cart {
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .cartSection .cartContain .cartContain_info .cartContain_btn {
+    display: block;
+    width: 95%;
+    background-color: bisque;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #c4888b;
+  }
+
+  .paginacion {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .pagination-link {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .pagination-link:hover {
+    background-color: #ddd;
+  }
+
+  .pagination-link.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .cartBook {
+    display: block;
+    background-color: wheat;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    color: #b7343a;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .cartBooks {
+    display: none;
+  }
+
+  .cartBook .cartBook_bookCover .content img {
+    width: 90%;
+  }
+
+  /* -------------------------------------- */
+
+  .podcastSection {
+    width: 100%;
+    margin-top: 100px;
+
+    & h2 {
+      text-align: center;
+      margin: 30px 0;
+      font-family: "Cormorant Garamond", serif;
+      padding: 1rem;
+      text-transform: uppercase;
+      background-color: rgba(222, 210, 169, 0.2);
+    }
+  }
+
+  .podcastSection .podcastSection_logo img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cartPodcast {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+
+    /*display: grid;*/
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .cartPodcast img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .cartPodcast_info {
+    text-align: center;
+  }
+
+  .cartPodcast_info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .cartPodcast_info p {
+    font-size: 14px;
+    color: #6e6e6e;
+    margin-bottom: 20px;
+  }
+
+  .btnPodcast {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #ff5f6d, #ffc371);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .btnPodcast:hover {
+    background-color: #ff5f6d;
+    transform: scale(1.05);
+  }
+
+  .btnPodcast:active {
+    background-color: #ffc371;
+    transform: scale(0.95);
+  }
+
+  /* prueba */
+
+  .logo-container {
+    position: relative;
+    width: 90%;
+    height: 150px;
+    margin: 50px auto;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .yellow-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #ede59e;
+    z-index: 2;
+  }
+
+  .pattern-rectangle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 40%;
+    height: 70%;
+    background-image: radial-gradient(
+      circle at 50% 50%,
+      #7d2f33 10%,
+      transparent 10%
+    );
+    background-size: 20px 20px;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .logo-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #7d2f33;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+}
+
 /* Las clases de este apartado solo aplicaran para la version mobile */
 @media screen and (min-width: 390px) and (max-width: 760px) {
+  /*390*/
   /**760*/
 
   .book-section {
