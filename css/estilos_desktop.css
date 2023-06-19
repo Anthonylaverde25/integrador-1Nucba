@@ -1,4 +1,6 @@
 /* Estilos básicos para todos los elementos */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   margin: 0; /* Margen cero para eliminar espacios adicionales */
   padding: 0; /* Relleno cero para eliminar relleno adicional */
@@ -623,7 +625,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 245, 245, 0.9);
+    margin-top: 50px;
     z-index: 10000;
   }
 
@@ -720,6 +722,202 @@
 
   .contenedorFormulario {
     width: 100%;
+  }
+
+  /* login */
+
+  /* Login */
+
+  .headerLogin .logo {
+    display: none; /*
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    font-weight: 800;
+    margin: 0 auto 25px auto;
+    color: whitesmoke;
+    background-color: #313131;
+    height: 100px;*/
+  }
+
+  .contenedorBanerLogin .logo {
+    display: block;
+    padding: 1rem;
+    width: 98%;
+    margin: 40px auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: rgba(235, 232, 232, 0.904);
+    font-family: "Pacifico", cursive;
+  }
+
+  .contenedorBanerLogin p {
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .contenedor {
+    background-color: rgb(243, 240, 240);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: auto;
+  }
+
+  .contenedorLoging {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .contenedorLoging--redes {
+    font-family: "Poppins";
+  }
+
+  .contenedorLoging--redes h2 {
+    margin: 30px 0;
+  }
+
+  .acceso {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline-start: 70px;
+  }
+
+  .acceso .iconoTwT {
+    font-size: 30px;
+    color: rgb(145, 144, 144);
+    background-color: rgb(216, 216, 216);
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .accesoGoogle {
+    display: flex;
+    width: 60%;
+    height: 45px;
+    /* padding-inline-start: 20px;*/
+    gap: 10px;
+    margin: 25px 0;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #298bf3;
+    border-radius: 7px;
+    padding: 2px;
+  }
+
+  .accesoGoogle img {
+    width: 40px;
+    height: 100%;
+    color: rgb(145, 144, 144);
+    background-color: rgb(249, 247, 247);
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .accesoGoogle h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .line-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .line {
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 171, 171);
+  }
+
+  .or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243, 240, 240);
+    padding: 0 10px;
+  }
+
+  /* formulario de inicio de seccion */
+  .contenedorLoging--form {
+    font-family: "Poppins";
+  }
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    background-color: rgb(243, 240, 240);
+    width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .footer {
+    margin-top: 0px;
+    padding-top: 1px;
+  }
+
+  .footerFinal {
+    text-align: center;
+    display: flex;
+    margin: 0;
+  }
+
+  .footerFinal p {
+    margin: 0 auto;
+    font-size: 14px;
+    color: #888;
+  }
+
+  .contenedorBanerLogin {
+    display: block;
+    background-color: rgb(227, 227, 227);
   }
 
   @media (max-width: 768px) {

@@ -14,13 +14,13 @@
   box-sizing: border-box;
   list-style: none;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: whitesmoke;
 }
 
-/* Estilos globales */
 a {
   text-decoration: none;
   color: inherit; /* Heredar el color del texto padre */
@@ -31,50 +31,34 @@ a {
   --background-first: #0000;
 }
 
-/* Variables CSS para colores utilizados */
-
-/* -------------------------- HEADER -------------------------------------------------------------------- */
-
-/* Estilos para el encabezado y el menú toggle en la versión móvil */
-
-/* Ocultar el Checkbox */
 #toggle {
   display: none;
 }
 
-/* Estilizar la etiqueta del menu */
 .label_toggle {
   cursor: pointer;
   background-color: var(--fuente-primaria);
 }
 
-/* Esconder el menu */
 .nav {
   display: none;
 }
 
-/* Mostrar el menú cuando el checkbox está marcado */
 #toggle:checked ~ nav {
   display: block;
-  top: 80px; /* Ajusta el valor según sea necesario */
+  top: 70px;
+  height: 30vh;
 }
 
-/* Posicionamiento y estilos del menú en pantallas más pequeñas */
 .nav {
   position: absolute;
   width: 100%;
   top: 50px;
   left: 0;
-  background: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Fondo semi-transparente para el efecto blur */
-
+  background: rgba(255, 255, 255, 0.8);
   padding: 10px;
   z-index: 1;
-  backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+  backdrop-filter: blur(10px);
 }
 
 .nav_list::after {
@@ -86,7 +70,6 @@ a {
   margin-top: 10px;
 }
 
-/* Estilos para la lista de elementos del menú */
 .nav_list {
   margin: 0;
   padding: 0;
@@ -96,13 +79,11 @@ a {
   height: 100vh;
 }
 
-/* Espacio entre los elementos de la lista */
 .nav_list li {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* Estilos del encabezado */
 .header {
   display: flex;
   align-items: center;
@@ -111,14 +92,12 @@ a {
   border-bottom: 1px gray solid;
 }
 
-/* Estilos para el ícono de toggle del menú */
 .header .label_toggle .toggle_icono {
   font-size: 30px;
   color: #fff;
   background-color: black;
 }
 
-/* Estilos para el logotipo */
 .header .logo {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -127,12 +106,11 @@ a {
   color: var(--fuente-primaria);
 }
 
-/* Estilos para el contenedor de registro e inicio de sesión */
 .header .registerAndLogin {
-  display: block;
+  display: flex;
+  gap: 10px;
 }
 
-/* Estilos para el botón de registro de usuario */
 .header .registerAndLogin .register_user {
   border-radius: 5px;
   color: var(--fuente-primaria);
@@ -378,6 +356,25 @@ a {
 /* Las clases de esta apartado solo se aplicaran a la version table */
 
 @media screen and (min-width: 761px) and (max-width: 1024px) {
+  .registerAndLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+  }
+  /* section nav*/
+
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+  }
+
   .book-section {
     color: #b7343a;
     font-family: "Cormorant Garamond", serif;
@@ -756,7 +753,6 @@ a {
 
   .joinTittle h3 {
     display: block;
-    border: 1px solid black;
   }
 
   .contactOptions p {
@@ -777,15 +773,6 @@ a {
   }
 
   /* Estilo del footer final */
-  .footerFinal {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .footerFinal p {
-    font-size: 14px;
-    color: #888;
-  }
 
   /* Section modals */
 
@@ -894,9 +881,181 @@ a {
   .contenedorFormulario {
     width: 100%;
   }
+
+  /* Login */
+
+  .headerLogin .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    font-weight: 800;
+    margin: 0 auto 25px auto;
+    color: whitesmoke;
+    background-color: #313131;
+    height: 100px;
+  }
+
+  .contenedor {
+    background-color: rgb(243, 240, 240);
+  }
+
+  .contenedorLoging {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .contenedorLoging--redes {
+    font-family: "Poppins";
+  }
+
+  .acceso {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .acceso .iconoTwT {
+    font-size: 30px;
+    color: rgb(145, 144, 144);
+    background-color: rgb(216, 216, 216);
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .accesoGoogle {
+    display: flex;
+    width: 60%;
+    height: 45px;
+    /* padding-inline-start: 20px;*/
+    gap: 10px;
+    margin: 25px 0;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #298bf3;
+    border-radius: 7px;
+    padding: 2px;
+  }
+
+  .accesoGoogle img {
+    width: 40px;
+    height: 100%;
+    color: rgb(145, 144, 144);
+    background-color: rgb(249, 247, 247);
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .accesoGoogle h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .line-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .line {
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 171, 171);
+  }
+
+  .or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243, 240, 240);
+    padding: 0 10px;
+  }
+
+  /* formulario de inicio de seccion */
+  .contenedorLoging--form {
+    font-family: "Poppins";
+  }
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    background-color: rgb(243, 240, 240);
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .footerFinal {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footerFinal p {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin: 0 auto;
+  }
+
+  .contenedorBanerLogin {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 760px) {
+  .registerAndLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+  }
+  /* navSections*/
+
   /* book sections */
 
   .book-section {
@@ -1125,8 +1284,8 @@ a {
 
   /* footer */
   .footer {
-    margin-top: 100px;
-    padding-top: 15px;
+    margin-top: 10px;
+    padding-top: 5px;
   }
 
   .footerContain {
@@ -1227,19 +1386,6 @@ a {
     align-items: center;
     padding: 1rem;
     gap: 10px;
-  }
-
-  .footerFinal {
-    width: 95%;
-    display: block;
-    margin: 0 auto;
-    padding: 5px;
-    font-family: "Cormorant Garamond", serif;
-  }
-
-  .footerFinal p {
-    text-align: center;
-    color: #000;
   }
 
   /* Modal contacs */
@@ -1348,5 +1494,163 @@ a {
 
   .contenedorFormulario {
     width: 100%;
+  }
+
+  /* Login */
+
+  .headerLogin .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    font-weight: 800;
+    margin: 0 auto 25px auto;
+    color: whitesmoke;
+    background-color: #313131;
+  }
+
+  .contenedor {
+    background-color: rgb(243, 240, 240);
+  }
+
+  .contenedorLoging {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .contenedorLoging--redes {
+    font-family: "Poppins";
+  }
+
+  .acceso {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .acceso .iconoTwT {
+    font-size: 30px;
+    color: rgb(145, 144, 144);
+    background-color: rgb(216, 216, 216);
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .accesoGoogle {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    /* padding-inline-start: 20px;*/
+    gap: 10px;
+    margin: 25px 0;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #298bf3;
+    border-radius: 7px;
+    padding: 2px;
+  }
+
+  .accesoGoogle img {
+    width: 40px;
+    height: 100%;
+    color: rgb(145, 144, 144);
+    background-color: rgb(249, 247, 247);
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .accesoGoogle h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .line-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .line {
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 171, 171);
+  }
+
+  .or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243, 240, 240);
+    padding: 0 10px;
+  }
+
+  /* formulario de inicio de seccion */
+  .contenedorLoging--form {
+    font-family: "Poppins";
+  }
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    background-color: rgb(243, 240, 240);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .footerFinal {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footerFinal p {
+    font-size: 14px;
+    color: #888;
+  }
+
+  .contenedorBanerLogin {
+    display: none;
   }
 }
