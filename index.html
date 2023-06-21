@@ -46,7 +46,7 @@
           <p><a href="login.html">Login</a></p>
         </div>
         <div class="register_user">
-          <p><a href="#">Subscribe</a></p>
+          <p><a href="register.html">Subscribe</a></p>
         </div>
       </div>
     </header>
@@ -340,61 +340,44 @@
         <div class="contact">
           <h3>Contacts</h3>
           <div class="contactOptions">
-            <p>Bookstore : +54 9 11 XXXX-XXXX</p>
-            <a href="#modal">Enter for contact form</a>
-            <!--<p>Enter for contact form</p>-->
+            <p>Bookstore: +54 9 11 XXXX-XXXX</p>
+            <a href="#modal" class="modal-link">Enter for contact form</a>
           </div>
-
         </div>
       </div>
 
+      <div class="footerFinal">
+        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+      </div>
 
-      
-    <section class="modalContenedor">
-      <div id="modal">
-        <div class="modalContenido">
-          <form class="formulario" action="">
-            <h3 class="tituloFormulario">Contacta conmigo</h3>
-            <div class="contenedorFormulario">
-              <div class="formularioGroup">
-                <input type="text" id="nombre" class="formImput" placeholder=" ">
-                <label for="nombre" class="formLabel">Nombre:</label>
-                <span class="form_line"></span>
-              </div>
+      <div id="modal" class="modal">
+        <div class="modalContenedor">
+          <span class="close">&times;</span>
+          <h2>formulario contacto</h2>
+          <form class="formularioContacto">
+            <label class="labelContacto" for="name">Name:</label>
+            <input class="inputContactos"  type="text" id="name" name="name" required>
     
-              <div class="formularioGroup">
-                <input type="text" id="apellido" class="formImput" placeholder=" ">
-                <label for="apellido" class="formLabel">Apellido:</label>
-                <span class="form_line"></span>
-              </div>
+            <label class="labelContacto"for="email">Email:</label>
+            <input class="inputContactos"  type="email" id="email" name="email" required>
     
-              <div class="formularioGroup">
-                <input type="email" id="correo" class="formImput" placeholder=" ">
-                <label for="correo" class="formLabel">Correo:</label>
-                <span class="form_line"></span>
-              </div>
+            <label class="labelContacto"for="message">Message:</label>
+            <textarea class="inputContacto textareaContacto"id="message" name="message" required></textarea>
     
-              <textarea rows="4" class="textarea" placeholder="Ingrese su mensaje aquí"></textarea>
-    
-              <a href="#" class="btnModals">Enviar mensaje</a>
-              <a href="#" class="btnModals">Cerrar</a>
-            </div>
+            <a class="inputSubmit" href="index.html">enviar</a>
           </form>
         </div>
       </div>
-    </section>
 
-      
-
-      
-
-      <div class="footerFinal">
-       <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-      </div>
-
-     
      
     </footer>
+
+   
+
+
+
+   
+    
 
     
 

@@ -614,133 +614,8 @@
     color: #888;
   }
 
-  /* Modal contacs*/
-
-  /* Section modals */
-
-  #modal {
-    display: none;
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
-    z-index: 10000;
-  }
-
-  #modal:target {
-    display: block;
-  }
-  .modal-contenido {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background-color: rgb(85, 83, 83);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  }
-
-  .btnModals {
-    display: block;
-    text-align: center;
-    margin: 1rem;
-    padding: 12px 24px;
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-size: 1rem;
-    text-decoration: none;
-    background-color: #af599e;
-    border: none;
-    border-radius: 6px;
-  }
-
-  /* Formulario de Contacto */
-
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-  }
-
-  .formularioGroup {
-    position: relative;
-    margin: 20px;
-  }
-
-  .formImput {
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-bottom: solid 1.5px #1c1c1c;
-    outline: none;
-    background-color: transparent;
-    /*background-color: rgba(245, 245, 245, 0.9);*/
-  }
-
-  .formImput:focus + .formLabel,
-  .formImput:not(:placeholder-shown) + .formLabel {
-    transform: translateY(-12px) scale(0.7);
-    color: var(--backgraound-boton-footer);
-  }
-
-  .formLabel {
-    position: absolute;
-    top: -10 px;
-    left: 0px;
-    transform: translateY(10px);
-    transition: transform 0.5s, color 0.3s;
-    z-index: 1;
-  }
-
-  .formInput:focus + .formLabel {
-    transform: translateY(-20px) scale(0.8);
-    z-index: 2;
-  }
-
-  .textarea {
-    width: 100%;
-    resize: none;
-    background-color: whitesmoke;
-    border: none;
-    text-transform: uppercase;
-    padding: 1rem;
-  }
-
-  .textarea:focus {
-    outline-style: none;
-  }
-
-  .botones {
-    background-color: rebeccapurple;
-    width: 50%;
-  }
-
-  .contenedorFormulario {
-    width: 100%;
-  }
-
-  /* login */
-
-  /* Login */
-
   .headerLogin .logo {
-    display: none; /*
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-size: larger;
-    font-weight: 800;
-    margin: 0 auto 25px auto;
-    color: whitesmoke;
-    background-color: #313131;
-    height: 100px;*/
+    display: none;
   }
 
   .contenedorBanerLogin .logo {
@@ -852,18 +727,12 @@
   }
 
   /* formulario de inicio de seccion */
+
   .contenedorLoging--form {
     font-family: "Poppins";
   }
   h2 {
     text-align: center;
-  }
-
-  form {
-    background-color: rgb(243, 240, 240);
-    width: 70%;
-    margin: 40px auto;
-    padding: 20px;
   }
 
   label {
@@ -873,16 +742,14 @@
     font-weight: 700;
   }
 
-  input[type="text"],
-  input[type="password"] {
+  .inputInicio {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 20px;
   }
-
-  input[type="submit"] {
+  .inputInicioSubmit {
     display: block;
     width: 100%;
     background-color: #4caf50;
@@ -894,30 +761,110 @@
     margin-top: 30px;
   }
 
-  input[type="submit"]:hover {
-    background-color: #45a049;
+  .inpustUserName {
+    display: flex;
+    gap: 50px;
   }
 
-  .footer {
-    margin-top: 0px;
-    padding-top: 1px;
+  .inpustUserName .inputName {
+    width: 100%;
   }
 
   .footerFinal {
     text-align: center;
-    display: flex;
-    margin: 0;
+    margin-top: 20px;
   }
 
   .footerFinal p {
-    margin: 0 auto;
     font-size: 14px;
     color: #888;
   }
 
   .contenedorBanerLogin {
     display: block;
-    background-color: rgb(227, 227, 227);
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Poppins";
+    display: none;
+    z-index: 1000;
+
+    & h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .modal:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modalContenedor {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+  }
+
+  .formularioContacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .labelContacto {
+    margin: 15px 0;
+  }
+
+  .inputContactos {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .inputContacto,
+  .inputSubmit {
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .formularioContacto .textareaContacto {
+    border: 1px solid beige;
+    height: 100px;
+    max-height: 80px;
+    max-width: 100%;
+    resize: none;
+  }
+
+  .inputSubmit {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   @media (max-width: 768px) {
