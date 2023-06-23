@@ -80,8 +80,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* background-color: rgb(206, 197, 216);*/
     padding: 2rem;
     width: 100%;
   }
@@ -865,6 +863,26 @@
     margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  /* modificando la version escritorio */
+
+  .thirdSection h3 {
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+
+  .reviewBook {
+    background-color: #dad7d7;
+  }
+
+  .reviewBook p {
+    background-color: rgb(227, 226, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   @media (max-width: 768px) {
