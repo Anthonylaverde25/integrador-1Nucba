@@ -867,6 +867,43 @@
 
   /* modificando la version escritorio */
 
+  .aboutThisBook {
+  }
+
+  .social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .social .sharePost_paragraph {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .social .sharePost_socialnetworks {
+    display: flex;
+    width: 90%;
+    font-size: 30px;
+    padding: 1rem;
+    justify-content: space-around;
+    margin-top: 30px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+  }
+
+  .social .sharePost_socialnetworks i {
+    background-color: rgb(66, 65, 65);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
   .thirdSection h3 {
     margin-top: 30px;
     text-transform: uppercase;
@@ -884,6 +921,8 @@
     padding: 20px;
     border-radius: 10px;
   }
+
+  /* */
 
   @media (max-width: 768px) {
     .book-section {

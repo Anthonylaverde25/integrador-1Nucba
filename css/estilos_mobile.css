@@ -356,6 +356,9 @@ a {
 /* Las clases de esta apartado solo se aplicaran a la version table */
 
 @media screen and (min-width: 761px) and (max-width: 1024px) {
+  .social {
+    display: none;
+  }
   .registerAndLogin {
     display: flex;
     flex-direction: column;
@@ -1019,6 +1022,9 @@ a {
 }
 
 @media screen and (min-width: 320px) and (max-width: 760px) {
+  .social {
+    display: none;
+  }
   .registerAndLogin {
     display: flex;
     flex-direction: column;
